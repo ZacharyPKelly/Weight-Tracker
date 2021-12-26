@@ -1,10 +1,12 @@
 package com.example.weighttracker;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Calendar;
+import java.util.Date;
 
 import devs.mulham.horizontalcalendar.HorizontalCalendar;
 import devs.mulham.horizontalcalendar.utils.HorizontalCalendarListener;
@@ -44,5 +46,15 @@ public class HomePage extends AppCompatActivity {
                 Log.e("TAG", "CURRENT DATE IS " + date);
             }
         });
+
+        TextView date = findViewById(R.id.date);
+        setDate(date);
+
     }
+
+    public void setDate (TextView view){
+        String str = String.format("%tc", new Date());
+        view.setText(str);
+    }
+
 }
