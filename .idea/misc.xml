@@ -3,8 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/zacha/AndroidStudioProjects/WeightTracker/app/src/main/res/layout/activity_graph.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/zacha/AndroidStudioProjects/WeightTracker/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/zacha/AndroidStudioProjects/WeightTracker/app/src/main/res/layout/home_page.xml" value="0.4" />
+        <entry key="..\:/Users/zacha/AndroidStudioProjects/WeightTracker/app/src/main/res/layout/home_page.xml" value="0.2" />
       </map>
     </option>
   </component>

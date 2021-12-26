@@ -1,7 +1,10 @@
 package com.example.weighttracker;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.TextView;
+import android.widget.DatePicker;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -44,17 +47,27 @@ public class HomePage extends AppCompatActivity {
                 // on below line we are printing date
                 // in the logcat which is selected.
                 Log.e("TAG", "CURRENT DATE IS " + date);
+                TextView dateViewTest = findViewById(R.id.date2);
+                //dateViewTest.setText(java.util.Calendar.getD);
             }
         });
 
-        TextView date = findViewById(R.id.date);
-        setDate(date);
+        TextView dateView = findViewById(R.id.date);
+        setDate(dateView);
 
     }
 
     public void setDate (TextView view){
         String str = String.format("%tc", new Date());
         view.setText(str);
+    }
+
+    public void goToGraph (View myView){
+
+        Intent goToGraph = new Intent(this, Graph.class);
+
+        startActivity(goToGraph);
+
     }
 
 }
